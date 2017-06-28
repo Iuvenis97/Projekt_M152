@@ -1,20 +1,20 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Antic" rel="stylesheet">
-    <link rel="stylesheet" href="LandscapesCSS.css"/>
+    <link rel="stylesheet" href="LandscapesCSS.css" />
     <title>Landscapes</title>
 </head>
 <body>
     <div>
         <nav class="navbar navbar-default navbar-fixed-top">
-            <img class="logo" src="Bilder/Logo.svg"/>
+            <img class="logo" src="Bilder/Logo.svg" />
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Pictures</a></li>
                 <li><a href="#">Video</a></li>
@@ -42,53 +42,47 @@
         </div>
         <div class="row text-center">
             <div class="col-sm-4">
-                <img src="Bilder/Brücke_Schiff_640px.jpg" onclick="openModal(); currentSlide(4);" class="hover-shadow" width="280" height="200"/>
+                <img src="Bilder/Brücke_Schiff_640px.jpg" onclick="openModal(); currentSlide(4);" class="hover-shadow" width="280" height="200" />
             </div>
             <div class="col-sm-4">
-                <img src="Bilder/Gletscher_640px.jpg" onclick="openModal(); currentSlide(5);" class="hover-shadow" width="280" height="200"/>
+                <img src="Bilder/Gletscher_640px.jpg" onclick="openModal(); currentSlide(5);" class="hover-shadow" width="280" height="200" />
             </div>
             <div class="col-sm-4">
-                <img src="Bilder/Mondaufgang_640px.jpg" onclick="openModal(); currentSlide(6);" class="hover-shadow" width="280" height="200"/>
+                <img src="Bilder/Mondaufgang_640px.jpg" onclick="openModal(); currentSlide(6);" class="hover-shadow" width="280" height="200" />
             </div>
         </div>
         <div class="row text-center">
             <div class="col-sm-4">
-                <img src="Bilder/Nebelmeer_640px.jpg" onclick="openModal(); currentSlide(7);" class="hover-shadow" width="280" height="200"/>
+                <img src="Bilder/Nebelmeer_640px.jpg" onclick="openModal(); currentSlide(7);" class="hover-shadow" width="280" height="200" />
             </div>
             <div class="col-sm-4">
-                <img src="Bilder/See_640px.jpg" onclick="openModal(); currentSlide(8);" class="hover-shadow" width="280" height="200"/>
+                <img src="Bilder/See_640px.jpg" onclick="openModal(); currentSlide(8);" class="hover-shadow" width="280" height="200" />
             </div>
             <div class="col-sm-4">
-                <img src="Bilder/Stadtbrunnen_640px.jpg" onclick="openModal(); currentSlide(9);" class="hover-shadow" width="280" height="200"/>
+                <img src="Bilder/Stadtbrunnen_640px.jpg" onclick="openModal(); currentSlide(9);" class="hover-shadow" width="280" height="200" />
             </div>
         </div>
     </div>
 
-<div id="myModal" class="modal">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
-    <div class="modal-content">
-        <div>
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
             <div class="mySlides">
                 <div class="numbertext">1 / 9</div>
                 <img src="Bilder/Alpen_1024px.jpg" style="width: 100%">
             </div>
-
             <div class="mySlides">
                 <div class="numbertext">2 / 9</div>
                 <img src="Bilder/Blumenwiese_1024px.jpg" style="width: 100%">
             </div>
-
             <div class="mySlides">
                 <div class="numbertext">3 / 9</div>
                 <img src="Bilder/Brandung_1024px.jpg" style="width: 100%">
             </div>
-        </div>
-        <div>
             <div class="mySlides">
                 <div class="numbertext">4 / 9</div>
                 <img src="Bilder/Brücke_Schiff_1024px.jpg" style="width: 100%">
             </div>
-
             <div class="mySlides">
                 <div class="numbertext">5 / 9</div>
                 <img src="Bilder/Gletscher_1024px.jpg" style="width: 100%">
@@ -97,8 +91,6 @@
                 <div class="numbertext">6 / 9</div>
                 <img src="Bilder/Mondaufgang_1024px.jpg" style="width: 100%">
             </div>
-        </div>
-        <div>
             <div class="mySlides">
                 <div class="numbertext">7 / 9</div>
                 <img src="Bilder/Nebelmeer_1024px.jpg" style="width: 100%">
@@ -111,7 +103,6 @@
                 <div class="numbertext">9 / 9</div>
                 <img src="Bilder/Stadtbrunnen_1024px.jpg" style="width: 100%">
             </div>
-        </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -119,47 +110,52 @@
             <div class="caption-container">
                 <p id="caption"></p>
             </div>
+            <div class="row text-center">
+                <div class="col-sm-4">
+                    <img class="demo" src="Bilder/Alpen_320px.jpg" onclick="currentSlide(1)" alt="Alpen">
+                </div>
 
-            <div class="col-sm-4">
-                <img class="demo" src="Bilder/Alpen_320px.jpg" onclick="currentSlide(1)" alt="Nature">
-            </div>
+                <div class="col-sm-4">
+                    <img class="demo" src="Bilder/Blumenwiese_320px.jpg" onclick="currentSlide(2)" alt="Blumenwiese">
+                </div>
 
-            <div class="col-sm-4">
-                <img class="demo" src="Bilder/Blumenwiese_320px.jpg" onclick="currentSlide(2)" alt="Trolltunga">
+                <div class="col-sm-4">
+                    <img class="demo" src="Bilder/Brandung_320px.jpg" onclick="currentSlide(3)" alt="Brandung">
+                </div>
             </div>
+            <div class="row text-center">
+                <div class="col-sm-4">
+                    <img class="demo" src="Bilder/Brücke_Schiff_320px.jpg" onclick="currentSlide(4)" alt="Brücke und Schiff">
+                </div>
 
-            <div class="col-sm-4">
-                <img class="demo" src="Bilder/Brandung_320px.jpg" onclick="currentSlide(3)" alt="Mountains">
-            </div>
+                <div class="col-sm-4">
+                    <img class="demo" src="Bilder/Gletscher_320px.jpg" onclick="currentSlide(5)" alt="Gletscher">
+                </div>
 
-            <div class="col-sm-4">
-                <img class="demo" src="Bilder/Brücke_Schiff_320px.jpg" onclick="currentSlide(4)" alt="Lights">
+                <div class="col-sm-4">
+                    <img class="demo" src="Bilder/Mondaufgang_320px.jpg" onclick="currentSlide(6)" alt="Mondaufgang">
+                </div>
             </div>
+            <div class="row text-center">
 
-            <div class="col-sm-4">
-                <img class="demo" src="Bilder/Gletscher_320px.jpg" onclick="currentSlide(5)" alt="Lights">
-            </div>
+                <div class="col-sm-4">
+                    <img class="demo" src="Bilder/Nebelmeer_320px.jpg" onclick="currentSlide(7)" alt="Nebelmeer">
+                </div>
 
-            <div class="col-sm-4">
-                <img class="demo" src="Bilder/Mondaufgang_320px.jpg" onclick="currentSlide(6)" alt="Lights">
-            </div>
-
-            <div class="col-sm-4">
-                <img class="demo" src="Bilder/Nebelmeer_320px.jpg" onclick="currentSlide(7)" alt="Lights">
-            </div>
-
-            <div class="col-sm-4">
-                <img class="demo" src="Bilder/See_320px.jpg" onclick="currentSlide(8)" alt="Lights">
-            </div>
-            <div class="col-sm-4">
-                <img class="demo" src="Bilder/Stadtbrunnen_320px.jpg" onclick="currentSlide(9)" alt="Lights">
+                <div class="col-sm-4">
+                    <img class="demo" src="Bilder/See_320px.jpg" onclick="currentSlide(8)" alt="See">
+                </div>
+                <div class="col-sm-4">
+                    <img class="demo" src="Bilder/Stadtbrunnen_320px.jpg" onclick="currentSlide(9)" alt="Stadtbrunnen">
+                </div>
             </div>
         </div>
-</div>
-<footer>
-    © All Rights reserved 
-    by Julian Manickam & Manuel Prieto
-</footer>
+    </div>
+    
+    <footer>
+        © All Rights reserved
+        by Julian Manickam & Manuel Prieto
+    </footer>
 </body>
 </html>
 
