@@ -1,20 +1,20 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Antic" rel="stylesheet">
-    <link rel="stylesheet" href="LandscapesCSS.css" />
+    <link rel="stylesheet" href="LandscapesCSS.css"/>
     <title>Landscapes</title>
 </head>
 <body>
     <div>
         <nav class="navbar navbar-default navbar-fixed-top">
-            <img src="Bilder/Logo.svg" width="80" height="80" />
+            <img class="logo" src="Bilder/Logo.svg"/>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Pictures</a></li>
                 <li><a href="#">Video</a></li>
@@ -26,42 +26,177 @@
                 Landscapes
             </div>
         </div>
+
+
+
+        <div class="text-center">
+            <div class="column col-sm-4">
+                <img src="Bilder/01aec8ab1e01fa038365db913149eacd.jpg" onclick="openModal(); currentSlide(1);" class="hover-shadow" width="280" height="200" />
+            </div>
+            <div class="col-sm-4">
+                <img src="Bilder/1490283314.jpg" onclick="openModal(); currentSlide(2);" class="hover-shadow" width="280" height="200" />
+            </div>
+            <div class="col-sm-4">
+                <img src="Bilder/39068566-landscapes-wallpapers.png" onclick="openModal(); currentSlide(3);" class="hover-shadow" width="280" height="200" />
+            </div>
+        </div>
+        <div class="text-center">
+            <div class="col-sm-4">
+                <img src="Bilder/af5eb166.png" onclick="openModal(); currentSlide(4);" class="hover-shadow" width="280" height="200"/>
+            </div>
+            <div class="col-sm-4">
+                <img src="Bilder/cd343cee046f5fd545f2a21dccbc6b92.jpg" onclick="openModal(); currentSlide(5);" class="hover-shadow" width="280" height="200"/>
+            </div>
+            <div class="col-sm-4">
+                <img src="Bilder/f8df3c5a3d8f1ed492f2b5e874563c90.jpg" onclick="openModal(); currentSlide(6);" class="hover-shadow" width="280" height="200"/>
+            </div>
+        </div>
+        <div class="text-center">
+            <div class="col-sm-4">
+                <img src="Bilder/scenic-landscapes.jpg" onclick="openModal(); currentSlide(7);" class="hover-shadow" width="280" height="200"/>
+            </div>
+            <div class="col-sm-4">
+                <img src="Bilder/Uph7bRQ3QSK6SFjzmpIb_Water_Landscapes_Twitter_Cover__Twitter_Background__TwitrCovers.jpg" onclick="openModal(); currentSlide(8);" class="hover-shadow" width="280" height="200"/>
+            </div>
+            <div class="col-sm-4">
+                <img src="Bilder/waves-stones-arizo_3210578k.jpg" onclick="openModal(); currentSlide(9);" class="hover-shadow" width="280" height="200"/>
+            </div>
+        </div>
     </div>
-    <div class="row text-center">
-        <div class="col-sm-4">
-            <img src="Bilder/01aec8ab1e01fa038365db913149eacd.jpg" width="280" height="200" />
+
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+        <div style="">
+            <div class="mySlides">
+                <div class="numbertext">1 / 9</div>
+                <img src="Bilder/01aec8ab1e01fa038365db913149eacd.jpg" style="width: 100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 9</div>
+                <img src="Bilder/1490283314.jpg" style="width: 100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 9</div>
+                <img src="Bilder/39068566-landscapes-wallpapers.png" style="width: 100%">
+            </div>
         </div>
-        <div class="col-sm-4">
-            <img src="Bilder/1490283314.jpg" width="280" height="200" />
+        <div style="">
+            <div class="mySlides">
+                <div class="numbertext">4 / 9</div>
+                <img src="Bilder/af5eb166.png" style="width: 100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 9</div>
+                <img src="Bilder/cd343cee046f5fd545f2a21dccbc6b92.jpg" style="width: 100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">6 / 9</div>
+                <img src="Bilder/f8df3c5a3d8f1ed492f2b5e874563c90.jpg" style="width: 100%">
+            </div>
         </div>
-        <div class="col-sm-4">
-            <img src="Bilder/39068566-landscapes-wallpapers.png" width="280" height="200" />
+        <div style="">
+            <div class="mySlides">
+                <div class="numbertext">7 / 9</div>
+                <img src="Bilder/scenic-landscapes.jpg" style="width: 100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">8 / 9</div>
+                <img src="Bilder/Uph7bRQ3QSK6SFjzmpIb_Water_Landscapes_Twitter_Cover__Twitter_Background__TwitrCovers.jpg" style="width: 100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">9 / 9</div>
+                <img src="Bilder/waves-stones-arizo_3210578k.jpg" style="width: 100%">
+            </div>
         </div>
-    </div>
-    <div class="row text-center">
-        <div class="col-sm-4">
-            <img src="Bilder/af5eb166.png" width="280" height="200" />
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="col-sm-4">
+                <img class="demo" src="Bilder/01aec8ab1e01fa038365db913149eacd.jpg" onclick="currentSlide(1)" alt="Nature">
+            </div>
+
+            <div class="col-sm-4">
+                <img class="demo" src="Bilder/1490283314.jpg" onclick="currentSlide(2)" alt="Trolltunga">
+            </div>
+
+            <div class="col-sm-4">
+                <img class="demo" src="Bilder/39068566-landscapes-wallpapers.png" onclick="currentSlide(3)" alt="Mountains">
+            </div>
+
+            <div class="col-sm-4">
+                <img class="demo" src="Bilder/af5eb166.png" onclick="currentSlide(4)" alt="Lights">
+            </div>
+
+            <div class="col-sm-4">
+                <img class="demo" src="Bilder/cd343cee046f5fd545f2a21dccbc6b92.jpg" onclick="currentSlide(5)" alt="Lights">
+            </div>
+
+            <div class="col-sm-4">
+                <img class="demo" src="Bilder/f8df3c5a3d8f1ed492f2b5e874563c90.jpg" onclick="currentSlide(6)" alt="Lights">
+            </div>
+
+            <div class="col-sm-4">
+                <img class="demo" src="Bilder/scenic-landscapes.jpg" onclick="currentSlide(7)" alt="Lights">
+            </div>
+
+            <div class="col-sm-4">
+                <img class="demo" src="Bilder/Uph7bRQ3QSK6SFjzmpIb_Water_Landscapes_Twitter_Cover__Twitter_Background__TwitrCovers.jpg" onclick="currentSlide(8)" alt="Lights">
+            </div>
+            <div class="col-sm-4">
+                <img class="demo" src="Bilder/waves-stones-arizo_3210578k.jpg" onclick="currentSlide(9)" alt="Lights">
+            </div>
         </div>
-        <div class="col-sm-4">
-            <img src="Bilder/cd343cee046f5fd545f2a21dccbc6b92.jpg" width="280" height="200" />
-        </div>
-        <div class="col-sm-4">
-            <img src="Bilder/f8df3c5a3d8f1ed492f2b5e874563c90.jpg" width="280" height="200" />
-        </div>
-    </div>
-    <div class="row text-center">
-        <div class="col-sm-4">
-            <img src="Bilder/scenic-landscapes.jpg" width="280" height="200" />
-        </div>
-        <div class="col-sm-4">
-            <img src="Bilder/Uph7bRQ3QSK6SFjzmpIb_Water_Landscapes_Twitter_Cover__Twitter_Background__TwitrCovers.jpg" width="280" height="200" />
-        </div>
-        <div class="col-sm-4">
-            <img src="Bilder/waves-stones-arizo_3210578k.jpg" width="280" height="200" />
-        </div>
-    </div>
-    <footer>
-         by Julian Manickam & Manuel Prieto
-    </footer>
+</div>
+<footer>
+    by Julian Manickam & Manuel Prieto
+</footer>
 </body>
 </html>
+
+<script>
+function openModal() {
+    document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
