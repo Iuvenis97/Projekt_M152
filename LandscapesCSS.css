@@ -6,20 +6,50 @@
 
 .jumbotron {
     background-image: url('Bilder/Schnee_1519px.jpg');
-    height: 375px;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
-.navbar {
+.navbar{
+    background-color: rgba(0,0,0,0.25);
+}
+.container-fluid{
+    padding-left: 0px;
+}
+.container{
+    text-align: center;
+    width: 90%;
+}
+.pictures{
+    display:inline;
+}
+.pictures img{
+    margin-bottom: 10px;
+}
+video{
+    width:100%;
+}
+.video {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.navbar{
     background-color: rgba(0,0,0,0.50);
 }
 
 .nav li {
     border-left: 1px solid white;
     padding: 10px;
+    height: 100%;
 }
 
 .nav.navbar-nav li a {
     color: white;
+}
+.nav.navbar-nav li a:hover{
+    color: darkgray;
 }
 
 .title {
@@ -27,6 +57,37 @@
     color: white;
     font-size: 80px;
     text-shadow: 0px 0px 10px rgba(0,0,0,1);
+    margin-top:50px;
+}
+@media(max-width: 1580px){
+.title{
+    font-size:80px;
+}
+}
+@media(max-width: 980px) {
+    .title {
+        font-size: 50px;
+    }
+}
+@media(max-width: 700px) {
+    .title {
+        font-size: 30px;
+    }
+}
+.row {
+    padding: 30px 120px;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 0px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
     margin-top: 50px;
 }
 
@@ -61,8 +122,9 @@ footer {
 }
 
 .logo {
-    width: 80px;
-    height: 80px;
+    width: 65px;
+    height: 65px;
+    padding: 5px;
 }
 
 img.hover-shadow {
@@ -101,6 +163,67 @@ img.hover-shadow {
         opacity: 1;
     }
 
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 20%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+    .text {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-transform: initial;
+        letter-spacing: normal;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+     /* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
 
 .mySlides {
     display: none;

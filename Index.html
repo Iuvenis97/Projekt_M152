@@ -1,24 +1,32 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Antic" rel="stylesheet">
-    <link rel="stylesheet" href="LandscapesCSS.css" />
+    <link rel="stylesheet" href="LandscapesCSS.css"/>
     <title>Landscapes</title>
 </head>
 <body>
-    <div>
         <nav class="navbar navbar-default navbar-fixed-top">
-            <img class="logo" src="Bilder/Logo.svg" />
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Pictures</a></li>
-                <li><a href="#">Video</a></li>
-            </ul>
+            <div class="container-fluid">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <img class="logo" src="Bilder/Logo.svg" />
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="Index.html">Pictures</a></li>
+                        <li><a href="Video.html">Video</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
         <div class="jumbotron">
@@ -26,53 +34,55 @@
                 Landscapes
             </div>
         </div>
-        <div class="text">
-            <h4>Wieso diese Seite</h4>
-            <p>Hallo lieber Besucher/Besucherin</p>
-            Diese Seite dient als Projekt für das Modul 152. Wir haben ein kleine Gallery erstellt mit selbst gemachten Bildern.
-            Dieses Projekt wird anschliessend benotet und zu unseren Zeugnissen hinzugezählt.
-            Die Bilder haben wir mit Lightbox versehen und können von nah angesehen werden. Zudem sind die Bilder responsive gestaltet so, dass
-            selbst wenn man die Browsergrösse ändert oder gar ein anderer Browser nimmt immer noch die Bilder richtig angezeigt werden.
-            Einige der Bilder haben wir mit Photoshop bearbeitet und ein wenig mit den Filtern herumgespielt welche es alles im Photoshop gibt.
-            Jegliches kopieren der Bilder ist jedoch untersagt da die Bilder immernoch Eigentum von unser Gruppe sind.<br/>
-            Oben rechts geht es weiter auf die Video-seite dort haben wir selbst ein Video erstellt und mit Musik eingebunden.
-            
+        
+        <div class="container">
+            <div class="text">
+                <h4>Wieso diese Seite</h4>
+                <p>Hallo lieber Besucher/Besucherin</p>
+                Diese Seite dient als Projekt für das Modul 152. Wir haben ein kleine Gallery erstellt mit selbst gemachten Bildern.
+                Dieses Projekt wird anschliessend benotet und zu unseren Zeugnissen hinzugezählt.
+                Die Bilder haben wir mit Lightbox versehen und können von nah angesehen werden. Zudem sind die Bilder responsive gestaltet so, dass
+                selbst wenn man die Browsergrösse ändert oder gar ein anderer Browser nimmt immer noch die Bilder richtig angezeigt werden.
+                Einige der Bilder haben wir mit Photoshop bearbeitet und ein wenig mit den Filtern herumgespielt welche es alles im Photoshop gibt.
+                Jegliches kopieren der Bilder ist jedoch untersagt da die Bilder immernoch Eigentum von unser Gruppe sind.<br />
+                Oben rechts geht es weiter auf die Video-seite dort haben wir selbst ein Video erstellt und mit Musik eingebunden.
+            </div>
+        <div class="pictures">
+            <img src="Bilder/Alpen_320px.jpg" srcset="Bilder/Alpen_320px.jpg 320w, Bilder/Alpen_640px.jpg 640w, Bilder/Alpen_1024px.jpg 1024w" sizes="(min-width: 50em) 33.3vw, (min-width: 28em) 50vw, 100vw" onclick="openModal(); currentSlide(1);" class="hover-shadow" height="200" />
 
+            <img src="Bilder/Blumenwiese_320px.jpg"
+                 srcset="Bilder/Blumenwiese_320px.jpg 320w, Bilder/Blumenwiese_640px.jpg 640w, Bilder/Blumenwiese_1024px.jpg 1024w" sizes="(min-width: 50em) 33.3vw, (min-width: 28em) 50vw, 100vw"
+                 onclick="openModal(); currentSlide(2);" class="hover-shadow" height="200"/>
+
+            <img src="Bilder/Brandung_320px.jpg"
+                 srcset="Bilder/Brandung_320px.jpg 320w, Bilder/Brandung_640px.jpg 640w, Bilder/Brandung_1024px.jpg 1024w" sizes="(min-width: 50em) 33.3vw, (min-width: 28em) 50vw, 100vw"
+                 onclick="openModal(); currentSlide(3);" class="hover-shadow" height="200" />
+
+            <img src="Bilder/Brücke_Schiff_320px.jpg"
+                 srcset="Bilder/Brücke_Schiff_320px.jpg 320w, Bilder/Brücke_Schiff_640px.jpg 640w, Bilder/Brücke_Schiff_1024px.jpg 1024w" sizes="(min-width: 50em) 33.3vw, (min-width: 28em) 50vw, 100vw"
+                 onclick="openModal(); currentSlide(4);" class="hover-shadow" height="200"/>
+
+            <img src="Bilder/Gletscher_320px.jpg"
+                 srcset="Bilder/Gletscher_320px 320w, Bilder/Gletscher_640px.jpg 640w, Bilder/Gletscher_1024px.jpg 1024w" sizes="(min-width: 50em) 33.3vw, (min-width: 28em) 50vw, 100vw"
+                 onclick="openModal(); currentSlide(5);" class="hover-shadow" height="200"/>
+
+            <img src="Bilder/Mondaufgang_320px.jpg"
+                 srcset="Bilder/Mondaufgang_320px.jpg 320w, Bilder/Mondaufgang_640px.jpg 640w, Bilder/Mondaufgang_1024px.jpg 1024w" sizes="(min-width: 50em) 33.3vw, (min-width: 28em) 50vw, 100vw"
+                 onclick="openModal(); currentSlide(6);" class="hover-shadow" height="200" />
+
+            <img src="Bilder/Nebelmeer_320px.jpg"
+                 srcset="Bilder/Nebelmeer_320px.jpg 320w, Bilder/Nebelmeer_640px.jpg 640w, Bilder/Nebelmeer_1024px.jpg 1024w" sizes="(min-width: 50em) 33.3vw, (min-width: 28em) 50vw, 100vw"
+                 onclick="openModal(); currentSlide(7);" class="hover-shadow" height="200"/>
+
+            <img src="Bilder/See_320px.jpg"
+                 srcset="Bilder/See_320px.jpg 320w, Bilder/See_640px.jpg 640w, Bilder/See_1024px.jpg 1024w" sizes="(min-width: 50em) 33.3vw, (min-width: 28em) 50vw, 100vw"
+                 onclick="openModal(); currentSlide(8);" class="hover-shadow" height="200"/>
+
+            <img src="Bilder/Stadtbrunnen_320px.jpg"
+                 srcset="Bilder/Stadtbrunnen_320px.jpg 320w, Bilder/Stadtbrunnen_640px.jpg 640w, Bilder/Stadtbrunnen_1024px.jpg 1024w" sizes="(min-width: 50em) 33.3vw, (min-width: 28em) 50vw, 100vw"
+                 onclick="openModal(); currentSlide(9);" class="hover-shadow" height="200"/>
         </div>
-        <div class="row text-center">
-            <div class="column col-sm-4">
-                <img src="Bilder/Alpen_640px.jpg" onclick="openModal(); currentSlide(1);" class="hover-shadow" width="280" height="200" />
-            </div>
-            <div class="col-sm-4">
-                <img src="Bilder/Blumenwiese_640px.jpg" onclick="openModal(); currentSlide(2);" class="hover-shadow" width="280" height="200" />
-            </div>
-            <div class="col-sm-4">
-                <img src="Bilder/Brandung_640px.jpg" onclick="openModal(); currentSlide(3);" class="hover-shadow" width="280" height="200" />
-            </div>
         </div>
-        <div class="row text-center">
-            <div class="col-sm-4">
-                <img src="Bilder/Brücke_Schiff_640px.jpg" onclick="openModal(); currentSlide(4);" class="hover-shadow" width="280" height="200" />
-            </div>
-            <div class="col-sm-4">
-                <img src="Bilder/Gletscher_640px.jpg" onclick="openModal(); currentSlide(5);" class="hover-shadow" width="280" height="200" />
-            </div>
-            <div class="col-sm-4">
-                <img src="Bilder/Mondaufgang_640px.jpg" onclick="openModal(); currentSlide(6);" class="hover-shadow" width="280" height="200" />
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-sm-4">
-                <img src="Bilder/Nebelmeer_640px.jpg" onclick="openModal(); currentSlide(7);" class="hover-shadow" width="280" height="200" />
-            </div>
-            <div class="col-sm-4">
-                <img src="Bilder/See_640px.jpg" onclick="openModal(); currentSlide(8);" class="hover-shadow" width="280" height="200" />
-            </div>
-            <div class="col-sm-4">
-                <img src="Bilder/Stadtbrunnen_640px.jpg" onclick="openModal(); currentSlide(9);" class="hover-shadow" width="280" height="200" />
-            </div>
-        </div>
-    </div>
 
     <div id="myModal" class="modal">
         <span class="close cursor" onclick="closeModal()">&times;</span>
@@ -122,7 +132,8 @@
             </div>
             <div class="row text-center">
                 <div class="col-sm-4">
-                    <img class="demo" src="Bilder/Alpen_320px.jpg" onclick="currentSlide(1)" alt="Alpen">
+                    <img class="demo" src="Bilder/Alpen_320px.jpg"
+                 srcset="Bilder/Alpen_320px.jpg 320w, Bilder/Alpen_640px.jpg 640w, Bilder/Alpen_1024px.jpg 1024w" sizes="(min-width: 50em) 33.3vw, (min-width: 28em) 50vw, 100vw onclick="currentSlide(1)" alt="Alpen">
                 </div>
 
                 <div class="col-sm-4">
@@ -162,11 +173,11 @@
         </div>
     </div>
 
-<footer class="footer">
-    <p style="margin-top: 5px; margin-bottom: 5px;"> © All Rights reserved | by Julian Manickam & Manuel Prieto</p>
-    <img class="logo" src="Bilder/Logo.svg" />
-    <p style="margin-top: 5px; margin-bottom: 5px;">Klasse InfA3a | M152</p>
-</footer>
+    <footer class="footer">
+        <p style="margin-top: 5px; margin-bottom: 5px;"> © All Rights reserved | by Julian Manickam & Manuel Prieto</p>
+        <img class="logo" src="Bilder/Logo.svg" />
+        <p style="margin-top: 5px; margin-bottom: 5px;">Klasse InfA3a | M152</p>
+    </footer>
 </body>
 </html>
 
